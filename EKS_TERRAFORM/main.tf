@@ -12,9 +12,9 @@ resource "aws_eks_cluster" "my_cluster" {
   }
 }
 
-resource "aws_eks_node_group" "my_node_group" {
+resource "aws_eks_node_group" "jawan" {
   cluster_name    = aws_eks_cluster.my_cluster.name
-  node_group_name = "my-node-group"
+  node_group_name = "jawan"
   node_role_arn   = "arn:aws:iam::891377358561:role/ec2-admin"  # Replace with your IAM role ARN
   subnet_ids         = ["subnet-06d8a52ca9bd8c56e", "subnet-0f447d6c84c376e9f"]      # Replace with your subnet IDs
 
